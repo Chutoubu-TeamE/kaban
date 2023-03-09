@@ -1,0 +1,356 @@
+/* インポート */
+
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+
+/* ヘッダー */
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid silver;
+    background-color: white;
+}
+
+/* 固定式ヘッダーの後ろの余白 */
+
+main{
+    padding-top: 80px;
+}
+
+/* ヘッダーの左寄せ部分 */
+
+.header-wrapper{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+header .header-logo{
+    height: 100%;
+    padding: 13px 0px 13px 0px;
+}
+
+header .header-logo a:hover{
+    opacity: 0.7;
+}
+
+header .header-logo img{
+    height: 100%;
+}
+
+.header-title{
+    margin-left: 30px;
+    font-size: 32px;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+
+/* ヘッダーのnav */
+
+header .header-nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+
+header .header-nav li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 65px;
+}
+
+header .header-nav li:hover{
+    opacity: 0.7;
+}
+
+/* メインビジュアル */
+
+.mainvisual{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: calc(100vh - 80px) ;
+    width: 100%;
+    background-image: url(https://user-images.githubusercontent.com/120165765/223028715-e2a7c5be-8655-49c3-8b5d-5e51bb041e4d.jpg);
+    background-position: center;
+    object-fit: cover;
+}
+
+main .mainvisual-texts{
+    padding: 45px 45px 45px 80px;
+    color: white;
+    font-size: 40px;
+    font-family: 'Zen Kurenaido', sans-serif;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* アウトライン */
+
+#outline{
+    padding: 150px 75px 100px 75px;
+}
+
+/* アウトラインのコンテインナー */
+
+#outline .first-container, #outline .second-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+}
+
+#outline .second-container{
+    margin-top: 80px;
+}
+
+#outline .first-container img, #outline .second-container img{
+    /* height: 100px; */
+    width: auto;
+}
+
+/* アウトライン　ファースト */
+
+#outline .first{
+    /* display: inline-block; */
+    padding: 50px;
+    font-family: 'Zen Kurenaido', sans-serif;
+    background-color: #f5f5f5;
+}
+
+#outline .first .title{
+    padding-left: 10px;
+    font-size: 25px;
+    border-left: 3px solid deepskyblue;
+}
+
+#outline .first p{
+    margin-top: 30px;
+    font-size: 24px;
+    letter-spacing: 3px;
+    line-height: 35px;
+}
+
+#outline .absolute{
+    width: 400px;
+    height: 100%;
+}
+
+#outline .absolute img{
+    width: 100%;
+    object-fit: cover;
+    vertical-align:bottom;
+} 
+/* アウトライン　セカンド */
+
+#outline .second{
+    float: right;
+    padding: 50px;
+    font-family: 'Zen Kurenaido', sans-serif;
+    background-color: #f5f5f5;
+}
+
+#outline .second .title{
+    padding-left: 10px;
+    font-size: 25px;
+    border-left: 3px solid orange;
+}
+
+#outline .second p{
+    margin-top: 30px;
+    font-size: 24px;
+    letter-spacing: 3px;
+    line-height: 35px;
+}
+
+/* how to use */
+
+#howtouse{
+    padding: 75px 80px;
+    background-image: url(https://user-images.githubusercontent.com/120165765/221348706-6fdaebfc-c770-4f7b-9692-de5283ec35ae.png);
+    object-fit: cover;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+
+#howtouse .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 50px 0px 50px;
+}
+
+/* how to use title */
+
+#howtouse .title{
+    display: inline-block;
+    padding-left: 10px;
+    font-size: 25px;
+    border-left: 3px solid lightgreen;
+    color: white;
+}
+
+/* how to use left, middle and right*/
+
+#howtouse .left,#howtouse .middle,#howtouse .right{
+    width: 31%;
+    padding: 22px 28px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+/* how to use boxes title */
+
+#howtouse h2{
+    font-size: 26px;
+}
+
+#howtouse span{
+    font-size: 32px;
+    margin-right: 10px;
+}
+
+/* how to use images*/
+
+#howtouse img{
+    display: block;
+    margin-top: 8px;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* how to use text */
+
+#howtouse .text{
+    margin-top: 20px;
+    padding: 12px 16px;
+    font-size: 20px;
+    line-height: 34px;
+    letter-spacing: 2px;
+    background-color: #f5f5f5;
+}
+
+/* goodpart */
+
+#goodpart{
+    padding: 130px 80px;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+
+#goodpart .title h1{
+    margin-bottom: 70px;
+    padding-left: 10px;
+    border-left: 3px solid;
+    font-size: 37px;
+}
+
+/* goodpart containers */
+
+#goodpart .first, #goodpart .second, #goodpart .third{
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 100vh;
+}
+
+#goodpart .second{
+    margin: 80px 0px;
+}
+
+/* goodpart icon */
+
+#goodpart .first .icon{
+    background-color: #94E99D;
+    border-radius: 50%;
+    height: 170px;
+    width: 170px;
+}
+
+#goodpart .second .icon{
+    background-color: #E9D994;
+    border-radius: 50%;
+    height: 170px;
+    width: 170px;
+}
+
+#goodpart .third .icon{
+    background-color: #E9AD94;
+    border-radius: 50%;
+    height: 170px;
+    width: 170px;
+}
+
+/* goodpart text */
+
+#goodpart .text{
+    margin-left: 20px;
+}
+
+/* goodpart h2 */
+
+#goodpart h2{
+    font-size: 30px;
+}
+
+/* goodpart p */
+
+#goodpart p{
+    margin-top: 5px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+/* footer */
+
+footer{
+    height: 500px;
+    background-color: #7DAAE0;
+    color: white;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+
+/* テキストの横と縦の余白を追加 */
+
+footer .texts-container{
+    padding: 60px 100px;
+}
+
+/* footerのタイトル */
+
+footer h1{
+    font-size: 50px;
+}
+
+/* footerのnavの横並びと余白 */
+
+footer .nav li{
+    margin: 5px 0px 20px 0px;
+    display: inline-block;
+}
+
+/* footerのa */
+
+footer .nav a{
+    font-size: 23px;
+    padding-right: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+/* footerのリスト調整 */
+
+footer .text ul{
+    font-size: 20px;
+    list-style: none;
+}
+
+footer .text li{
+    padding-top: 10px;
+    line-height: 30px;
+}
